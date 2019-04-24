@@ -17,9 +17,9 @@ namespace WPFApp.Views
     /// <summary>
     /// Interaction logic for ForecastViewModel.xaml
     /// </summary>
-    public partial class ForecastViewModel : Window
+    public partial class ForecastView : Window
     {
-        public ForecastViewModel()
+        public ForecastView()
         {
             InitializeComponent();
         }

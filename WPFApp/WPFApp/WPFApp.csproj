@@ -74,11 +74,12 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Helpers\DarkSkyAPI.cs" />
     <Compile Include="Models\Currently.cs" />
     <Compile Include="Models\RootObject.cs" />
     <Compile Include="ViewModels\ForecastViewModel.cs" />
-    <Compile Include="Views\ForecastViewModel.xaml.cs">
-      <DependentUpon>ForecastViewModel.xaml</DependentUpon>
+    <Compile Include="Views\ForecastView.xaml.cs">
+      <DependentUpon>ForecastView.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -110,13 +111,11 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Page Include="Views\ForecastViewModel.xaml">
+    <Page Include="Views\ForecastView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Helpers\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

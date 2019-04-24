@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WPFApp.Models
 {
-    class Currently
+    public class Currently
     {
     }
 }
