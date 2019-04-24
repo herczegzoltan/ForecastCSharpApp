@@ -8,12 +8,21 @@ using WPFApp.Helpers;
 
 namespace WPFApp.ViewModels
 {
-    public class ForecastViewModel : ForecastProperty
+    public class ForecastViewModel : ForecastPropertyViewModel
     {
         public ForecastViewModel()
         {
             DarkSkyAPI.InitializeClient();
+            AddLangugesToModel();
+        }   
+
+        public void AddLangugesToModel()
+        {
+            Languages.Add(new Models.LanguageModel { KeyLang = "hu", ValueLang = "Hungarian" });
+            Languages.Add(new Models.LanguageModel { KeyLang = "be", ValueLang = "Belgian" });
+            Languages.Add(new Models.LanguageModel { KeyLang = "en", ValueLang = "English" });
         }
+        
 
  
         public async void GetForecastInformation()

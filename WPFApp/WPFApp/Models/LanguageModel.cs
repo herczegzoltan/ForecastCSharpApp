@@ -1,0 +1,14 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace WPFApp.Models
+{
+    public class LanguageModel
+    {
+        public string KeyLang { get; set; }
+        public string ValueLang { get; set; }
+    }
+}

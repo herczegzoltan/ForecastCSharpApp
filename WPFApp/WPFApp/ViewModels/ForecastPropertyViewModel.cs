@@ -4,10 +4,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using WPFApp.Models;
 
 namespace WPFApp.ViewModels
 {
-    public class ForecastProperty : Screen
+    public class ForecastPropertyViewModel : Screen
     {
 
         private string _CurrentSummary;
@@ -17,6 +18,9 @@ namespace WPFApp.ViewModels
         private string _CurrentWindSpeed;
         private string _CurrentHumidity;
         private string _CurrentUvIndex;
+        private BindableCollection<LanguageModel> _language = new BindableCollection<LanguageModel>();
+        private LanguageModel _selectedLanguage;
+
         public string CurrentSummary
         {
             get
@@ -109,8 +113,20 @@ namespace WPFApp.ViewModels
         }
 
 
+        public BindableCollection<LanguageModel> Languages
+        {
+            get { return _language; }
+            set { _language = value; }
+        }
 
-
-
+        public LanguageModel SelectedLanguage
+        {
+            get { return _selectedLanguage; }
+            set
+            {
+                _selectedLanguage = value;
+                NotifyOfPropertyChange(() => SelectedLanguage);
+            }
+        }
     }
 }
