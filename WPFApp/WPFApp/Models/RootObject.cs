@@ -9,6 +9,6 @@ namespace WPFApp.Models
     public class RootObject
     {
         public Currently currently { get; set; }
-        //public Daily daily { get; set; }
+        public DailyModel daily { get; set; }
     }
 }

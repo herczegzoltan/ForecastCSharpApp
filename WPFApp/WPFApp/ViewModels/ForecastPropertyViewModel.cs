@@ -18,6 +18,23 @@ namespace WPFApp.ViewModels
         private string _CurrentWindSpeed;
         private string _CurrentHumidity;
         private string _CurrentUvIndex;
+
+        private string _DailySummary;
+
+        public string DailySummary
+        {
+            get
+            {
+                return _DailySummary;
+            }
+            set
+            {
+                _DailySummary = value;
+                NotifyOfPropertyChange(() => DailySummary);
+            }
+        }
+
+
         private BindableCollection<LanguageModel> _language = new BindableCollection<LanguageModel>();
         private LanguageModel _selectedLanguage;
 

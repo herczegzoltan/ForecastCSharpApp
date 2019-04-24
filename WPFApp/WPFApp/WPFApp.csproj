@@ -78,6 +78,8 @@
     <Compile Include="Helpers\ForecastProcessor.cs" />
     <Compile Include="Models\CityModel.cs" />
     <Compile Include="Models\Currently.cs" />
+    <Compile Include="Models\DailyDataModel.cs" />
+    <Compile Include="Models\DailyModel.cs" />
     <Compile Include="Models\LanguageModel.cs" />
     <Compile Include="Models\RootObject.cs" />
     <Compile Include="ViewModels\ForecastPropertyViewModel.cs" />

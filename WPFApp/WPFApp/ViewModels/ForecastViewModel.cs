@@ -64,7 +64,6 @@ namespace WPFApp.ViewModels
             CurrentWindSpeed = forecastInfo.currently.windSpeed;
             CurrentHumidity = forecastInfo.currently.humidity;
             CurrentUvIndex = forecastInfo.currently.uvIndex;
-
         }
     }
 }
