@@ -53,7 +53,9 @@ namespace WPFApp.ViewModels
 
         public async void GetForecastInformation()
         {
-            var forecastInfo = await ForecastProcessor.LoadForecastInformation("47.49801,19.03991", "hu");
+            
+
+            var forecastInfo = await ForecastProcessor.LoadForecastInformation(SelectedCity.ValueCoord, SelectedLanguage.KeyLang);
 
             CurrentSummary = forecastInfo.currently.summary;
             CurrentTemperature = forecastInfo.currently.temperature;
