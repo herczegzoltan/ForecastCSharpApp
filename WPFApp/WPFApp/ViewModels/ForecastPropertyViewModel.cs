@@ -21,6 +21,9 @@ namespace WPFApp.ViewModels
         private BindableCollection<LanguageModel> _language = new BindableCollection<LanguageModel>();
         private LanguageModel _selectedLanguage;
 
+        private BindableCollection<CityModel> _city = new BindableCollection<CityModel>();
+        private CityModel _selectedCity;
+
         public string CurrentSummary
         {
             get
@@ -112,7 +115,6 @@ namespace WPFApp.ViewModels
             }
         }
 
-
         public BindableCollection<LanguageModel> Languages
         {
             get { return _language; }
@@ -128,5 +130,21 @@ namespace WPFApp.ViewModels
                 NotifyOfPropertyChange(() => SelectedLanguage);
             }
         }
+
+        public BindableCollection<CityModel> Cities
+        {
+            get { return _city; }
+            set { _city = value; }
+        }
+        public CityModel SelectedCity
+        {
+            get { return _selectedCity; }
+            set
+            {
+                _selectedCity = value;
+                NotifyOfPropertyChange(() => SelectedCity);
+            }
+        }
+
     }
 }

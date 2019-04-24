@@ -8,10 +8,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WPFApp.Properties
-{
-
-
+namespace WPFApp.Properties {
+    using System;
+    
+    
     /// <summary>
     ///   A strongly-typed resource class, for looking up localized strings, etc.
     /// </summary>
@@ -19,52 +19,106 @@ namespace WPFApp.Properties
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources
-    {
-
+    internal class Resources {
+        
         private static global::System.Resources.ResourceManager resourceMan;
-
+        
         private static global::System.Globalization.CultureInfo resourceCulture;
-
+        
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Resources()
-        {
+        internal Resources() {
         }
-
+        
         /// <summary>
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager
-        {
-            get
-            {
-                if ((resourceMan == null))
-                {
+        internal static global::System.Resources.ResourceManager ResourceManager {
+            get {
+                if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("WPFApp.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
             }
         }
-
+        
         /// <summary>
         ///   Overrides the current thread's CurrentUICulture property for all
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture
-        {
-            get
-            {
+        internal static global::System.Globalization.CultureInfo Culture {
+            get {
                 return resourceCulture;
             }
-            set
-            {
+            set {
                 resourceCulture = value;
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Amsterdam:52.379189,4.899431
+        ///Budapest:47.49801,19.03991
+        ///Debrecen:47.53333,21.63333
+        ///Luxembourg:49.611622,6.131935
+        ///Pécs:46.08333,18.23333
+        ///Prague:50.08804,14.42076
+        ///München:48.137154,11.576124
+        ///Wienna:48.210033,16.363449.
+        /// </summary>
+        internal static string ListOfCities {
+            get {
+                return ResourceManager.GetString("ListOfCities", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ar:Arabic
+        ///az:Azerbaijani
+        ///be:Belarusian
+        ///bg:Bulgarian
+        ///bn:Bengali
+        ///bs:Bosnian
+        ///ca:Catalan
+        ///cs:Czech
+        ///da:Danish
+        ///de:German
+        ///el:Greek
+        ///en:English (which is the default)
+        ///eo:Esperanto
+        ///es:Spanish
+        ///et:Estonian
+        ///fi:Finnish
+        ///fr:French
+        ///he:Hebrew
+        ///hi:Hindi
+        ///hr:Croatian
+        ///hu:Hungarian
+        ///id:Indonesian
+        ///is:Icelandic
+        ///it:Italian
+        ///ja:Japanese
+        ///ka:Georgian
+        ///kn:Kannada
+        ///ko:Korean
+        ///kw:Cornish
+        ///lv:Latvian
+        ///ml:Malayam
+        ///mr:Marathi
+        ///nb:Norwegian Bokmål
+        ///nl:Dutch
+        ///no:Norwegian Bokmål (alias for nb)
+        ///pa:Punjabi
+        ///pl:Polish
+        ///pt:Po [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string ListOfLanguages {
+            get {
+                return ResourceManager.GetString("ListOfLanguages", resourceCulture);
             }
         }
     }

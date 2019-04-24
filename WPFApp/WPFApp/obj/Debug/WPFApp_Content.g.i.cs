@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("assets/listoflanguages.txt")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("sources/textfile1.txt")]
 
 

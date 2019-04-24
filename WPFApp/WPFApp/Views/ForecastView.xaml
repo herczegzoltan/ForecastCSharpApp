@@ -9,8 +9,8 @@
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="20"/>
-            <ColumnDefinition Width="100"/>
-            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="200"/>
             <ColumnDefinition Width="100"/>
             <ColumnDefinition Width="100"/>
         </Grid.ColumnDefinitions>
@@ -36,7 +36,14 @@
                   SelectedItem="{Binding Path=SelectedLanguage, Mode=OneWayToSource}" 
                   DisplayMemberPath="ValueLang">
         </ComboBox>
-        <ComboBox Grid.Row="1" Grid.Column="2">City</ComboBox>
+        <ComboBox Grid.Row="1" Grid.Column="2" 
+                  x:Name="Cities" 
+                  SelectedItem="{Binding Path=SelectedCity, Mode=OneWayToSource}" 
+                  DisplayMemberPath="KeyCity">
+        </ComboBox>
+
+
+
         <Button x:Name="GetForecastInformation"        Grid.Row="1" Grid.Column="3">Request</Button>
 
         <!--    Row2    -->

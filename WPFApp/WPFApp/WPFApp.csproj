@@ -76,6 +76,7 @@
     </Compile>
     <Compile Include="Helpers\DarkSkyAPI.cs" />
     <Compile Include="Helpers\ForecastProcessor.cs" />
+    <Compile Include="Models\CityModel.cs" />
     <Compile Include="Models\Currently.cs" />
     <Compile Include="Models\LanguageModel.cs" />
     <Compile Include="Models\RootObject.cs" />
@@ -120,7 +121,18 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Assets\ListOfLanguages.txt" />
+    <None Include="Resources\ListOfCities.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ListOfLanguages.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>if exist "$(TargetPath).locked" del "$(TargetPath).locked"
+if exist "$(TargetPath)" if not exist "$(TargetPath).locked" move "$(TargetPath)" "$(TargetPath).locked"</PreBuildEvent>
+  </PropertyGroup>
 </Project>
