@@ -75,6 +75,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Helpers\DarkSkyAPI.cs" />
+    <Compile Include="Helpers\ForecastProcessor.cs" />
     <Compile Include="Models\Currently.cs" />
     <Compile Include="Models\RootObject.cs" />
     <Compile Include="ViewModels\ForecastViewModel.cs" />
