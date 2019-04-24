@@ -1,0 +1,15 @@
+C:\Projects\GitRepo\ForecastCSharpApp\WPFApp\WPFApp\bin\Debug\WPFApp.exe.config
+C:\Projects\GitRepo\ForecastCSharpApp\WPFApp\WPFApp\bin\Debug\WPFApp.exe
+C:\Projects\GitRepo\ForecastCSharpApp\WPFApp\WPFApp\bin\Debug\WPFApp.pdb
+C:\Projects\GitRepo\ForecastCSharpApp\WPFApp\WPFApp\obj\Debug\WPFApp.csprojAssemblyReference.cache
+C:\Projects\GitRepo\ForecastCSharpApp\WPFApp\WPFApp\obj\Debug\MainWindow.g.cs
+C:\Projects\GitRepo\ForecastCSharpApp\WPFApp\WPFApp\obj\Debug\App.g.cs
+C:\Projects\GitRepo\ForecastCSharpApp\WPFApp\WPFApp\obj\Debug\WPFApp_MarkupCompile.cache
+C:\Projects\GitRepo\ForecastCSharpApp\WPFApp\WPFApp\obj\Debug\WPFApp_MarkupCompile.lref
+C:\Projects\GitRepo\ForecastCSharpApp\WPFApp\WPFApp\obj\Debug\MainWindow.baml
+C:\Projects\GitRepo\ForecastCSharpApp\WPFApp\WPFApp\obj\Debug\WPFApp.g.resources
+C:\Projects\GitRepo\ForecastCSharpApp\WPFApp\WPFApp\obj\Debug\WPFApp.Properties.Resources.resources
+C:\Projects\GitRepo\ForecastCSharpApp\WPFApp\WPFApp\obj\Debug\WPFApp.csproj.GenerateResource.cache
+C:\Projects\GitRepo\ForecastCSharpApp\WPFApp\WPFApp\obj\Debug\WPFApp.csproj.CoreCompileInputs.cache
+C:\Projects\GitRepo\ForecastCSharpApp\WPFApp\WPFApp\obj\Debug\WPFApp.exe
+C:\Projects\GitRepo\ForecastCSharpApp\WPFApp\WPFApp\obj\Debug\WPFApp.pdb
