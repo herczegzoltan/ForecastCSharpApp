@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Projects\GitRepo\ForecastCSharpApp\WPFApp\WPFApp\App.xaml
-11151548125
+1-1748487361
 
-61814867618
+10-2135466184
 13-1505183044
-MainWindow.xaml;
+Views\ForecastViewModel.xaml;
 
-True
+False
 
