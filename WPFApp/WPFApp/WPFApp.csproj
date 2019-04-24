@@ -78,6 +78,7 @@
     <Compile Include="Helpers\ForecastProcessor.cs" />
     <Compile Include="Models\Currently.cs" />
     <Compile Include="Models\RootObject.cs" />
+    <Compile Include="ViewModels\ForecastProperty.cs" />
     <Compile Include="ViewModels\ForecastViewModel.cs" />
     <Compile Include="Views\ForecastView.xaml.cs">
       <DependentUpon>ForecastView.xaml</DependentUpon>

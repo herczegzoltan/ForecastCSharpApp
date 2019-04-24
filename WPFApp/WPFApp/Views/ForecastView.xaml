@@ -15,7 +15,6 @@
             <ColumnDefinition Width="auto"/>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="20"/>
-
         </Grid.ColumnDefinitions>
 
         <Grid.RowDefinitions>
@@ -31,6 +30,7 @@
             <RowDefinition Height="auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
+        
         <TextBlock x:Name="CurrentSummary"             Grid.Row="1" Grid.Column="1"></TextBlock>
         <TextBlock x:Name="CurrentTemperature"         Grid.Row="2" Grid.Column="1"></TextBlock>
         <TextBlock x:Name="CurrentApparentTemperature" Grid.Row="3" Grid.Column="1"></TextBlock>
