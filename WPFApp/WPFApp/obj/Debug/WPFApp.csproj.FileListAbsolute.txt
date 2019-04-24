@@ -29,3 +29,4 @@ C:\Projects\GitRepo\ForecastCSharpApp\WPFApp\WPFApp\obj\Debug\WPFApp.g.resources
 C:\Projects\GitRepo\ForecastCSharpApp\WPFApp\WPFApp\obj\Debug\WPFApp.csproj.CopyComplete
 C:\Projects\GitRepo\ForecastCSharpApp\WPFApp\WPFApp\obj\Debug\WPFApp.exe
 C:\Projects\GitRepo\ForecastCSharpApp\WPFApp\WPFApp\obj\Debug\WPFApp.pdb
+C:\Projects\GitRepo\ForecastCSharpApp\WPFApp\WPFApp\obj\Debug\WPFApp.csprojAssemblyReference.cache
