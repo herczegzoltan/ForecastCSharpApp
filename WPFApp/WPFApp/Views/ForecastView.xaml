@@ -5,21 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPFApp.Views"
         mc:Ignorable="d"
-        Title="ForecastView" Height="725" Width="1000">
+        Title="ForecastView" Height="725" Width="1200">
 
         <Grid >
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="10"/>
+                <ColumnDefinition Width="30"/>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="30"/>
             </Grid.ColumnDefinitions>
 
             <Grid.RowDefinitions>
@@ -55,7 +54,7 @@
                   DisplayMemberPath="KeyCity">
             </ComboBox>
 
-            <Button x:Name="GetForecastInformation"        Grid.Row="1" Grid.Column="8" >Request</Button>
+            <Button x:Name="GetForecastInformation"        Grid.Row="1" Grid.Column="8"  >Request</Button>
 
             <TextBlock x:Name="CurrentSummary"             Grid.Row="4"  Grid.Column="1" Grid.ColumnSpan ="8" TextAlignment="Center" FontSize="40" ></TextBlock>
             <TextBlock x:Name="CurrentTemperature"         Grid.Row="5"  Grid.Column="1" Grid.ColumnSpan ="8" TextAlignment="Center" FontSize="60" FontWeight="Bold" ></TextBlock>
@@ -71,13 +70,11 @@
             <Label Grid.Row="12"   Grid.Column="5" Grid.ColumnSpan ="2" HorizontalAlignment="Center" VerticalAlignment="Center"  FontSize="20" FontWeight="Bold"  >Day 3</Label>
             <Label Grid.Row="12"   Grid.Column="7" Grid.ColumnSpan ="2" HorizontalAlignment="Center" VerticalAlignment="Center"  FontSize="20" FontWeight="Bold"  >Day 4</Label>
 
-            <TextBlock x:Name="Day1" Grid.Row="13" Grid.Column="1" Grid.ColumnSpan ="2" ></TextBlock>
+            <TextBlock x:Name="Day1" Grid.Row="13" Grid.Column="1" Grid.ColumnSpan ="2"  ></TextBlock>
             <TextBlock x:Name="Day2" Grid.Row="13" Grid.Column="3" Grid.ColumnSpan ="2" ></TextBlock>
             <TextBlock x:Name="Day3" Grid.Row="13" Grid.Column="5" Grid.ColumnSpan ="2" ></TextBlock>
             <TextBlock x:Name="Day4" Grid.Row="13" Grid.Column="7" Grid.ColumnSpan ="2" ></TextBlock>
-            <Image Source="{Binding IconDay1}"  Height="50" Grid.Row="14"   Grid.Column="1" Grid.ColumnSpan ="2"  />
-            
-            
+
             <Label Grid.Row="15"   Grid.Column="1" Grid.ColumnSpan ="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" FontWeight="Bold"  >Day 5</Label>
             <Label Grid.Row="15"   Grid.Column="3" Grid.ColumnSpan ="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" FontWeight="Bold"  >Day 6</Label>
             <Label Grid.Row="15"   Grid.Column="5" Grid.ColumnSpan ="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" FontWeight="Bold"  >Day 7</Label>

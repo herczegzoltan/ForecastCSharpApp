@@ -8,6 +8,7 @@ using WPFApp.Helpers;
 using System.IO;
 using WPFApp.Models;
 using System.Reflection;
+using System.Windows.Media.Imaging;
 
 namespace WPFApp.ViewModels
 {
@@ -16,11 +17,10 @@ namespace WPFApp.ViewModels
         public ForecastViewModel()
         {
             DarkSkyAPI.InitializeClient();
+
             AddLangugesToModel();
             AddCitiesToModel();
-
         }
-
         public void AddLangugesToModel()
         {
             string fileName = string.Format(@"Resources\ListOfLanguages.txt");
@@ -53,40 +53,47 @@ namespace WPFApp.ViewModels
         }
         public async void GetForecastInformation()
         {
-            var forecastInfo = await ForecastProcessor.LoadForecastInformation(SelectedCity.ValueCoord, SelectedLanguage.KeyLang);
-
-            CurrentSummary = forecastInfo.currently.summary;
-            CurrentTemperature = forecastInfo.currently.temperature + "°C";
-            CurrentApparentTemperature = forecastInfo.currently.apparentTemperature + "°C";
-            CurrentPressure = forecastInfo.currently.pressure + "hPa";
-            CurrentWindSpeed = forecastInfo.currently.windSpeed + "m/s";
-            CurrentHumidity = forecastInfo.currently.humidity;
-            CurrentUvIndex = forecastInfo.currently.uvIndex;
-
-
-            string[] DaysAr = new string[8];
-            for (int i = 0; i < 8; i++)
+            
+            if (SelectedLanguage == null || SelectedCity == null)
             {
-                DaysAr[i] = 
-                    forecastInfo.daily.data[i].summary + "\n" +
-                    forecastInfo.daily.data[i].temperatureHigh + "°C"+ "\n" +
-                    forecastInfo.daily.data[i].temperatureLow+ "°C" + "\n" +
-                    forecastInfo.daily.data[i].apparentTemperatureHigh + "°C" +  "\n" +
-                    forecastInfo.daily.data[i].apparentTemperatureLow + "°C"+ "\n" +
-                    forecastInfo.daily.data[i].pressure + "hPa" +"\n" +
-                    forecastInfo.daily.data[i].windSpeed + "m/s" + "\n" +
-                    forecastInfo.daily.data[i].humidity + "\n" +
-                    forecastInfo.daily.data[i].uvIndex + "\n";
+                CurrentSummary = "Select Language/City!";
             }
+            else
+            {
+                var forecastInfo = await ForecastProcessor.LoadForecastInformation(SelectedCity.ValueCoord, SelectedLanguage.KeyLang);
 
-            Day1 = DaysAr[0];
-            Day2 = DaysAr[1];
-            Day3 = DaysAr[2];
-            Day4 = DaysAr[3];
-            Day5 = DaysAr[4];
-            Day6 = DaysAr[5];
-            Day7 = DaysAr[6];
-            Day8 = DaysAr[7];
+                CurrentSummary = forecastInfo.currently.summary;
+                CurrentTemperature = forecastInfo.currently.temperature + "°C";
+                CurrentApparentTemperature = forecastInfo.currently.apparentTemperature + "°C";
+                CurrentPressure = forecastInfo.currently.pressure + "hPa";
+                CurrentWindSpeed = forecastInfo.currently.windSpeed + "m/s";
+                CurrentHumidity = forecastInfo.currently.humidity;
+                CurrentUvIndex = forecastInfo.currently.uvIndex;
+
+                string[] DaysAr = new string[8];
+                for (int i = 0; i < 8; i++)
+                {
+                    DaysAr[i] =
+                        forecastInfo.daily.data[i].summary + "\n" +
+                        forecastInfo.daily.data[i].temperatureHigh + "°C" + "\n" +
+                        forecastInfo.daily.data[i].temperatureLow + "°C" + "\n" +
+                        forecastInfo.daily.data[i].apparentTemperatureHigh + "°C" + "\n" +
+                        forecastInfo.daily.data[i].apparentTemperatureLow + "°C" + "\n" +
+                        forecastInfo.daily.data[i].pressure + "hPa" + "\n" +
+                        forecastInfo.daily.data[i].windSpeed + "m/s" + "\n" +
+                        forecastInfo.daily.data[i].humidity + "\n" +
+                        forecastInfo.daily.data[i].uvIndex + "\n";
+                }
+
+                Day1 = DaysAr[0];
+                Day2 = DaysAr[1];
+                Day3 = DaysAr[2];
+                Day4 = DaysAr[3];
+                Day5 = DaysAr[4];
+                Day6 = DaysAr[5];
+                Day7 = DaysAr[6];
+                Day8 = DaysAr[7];
+            }
 
         }
 

@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using WPFApp.Models;
 
+
 namespace WPFApp.ViewModels
 {
     public class ForecastPropertyViewModel : Screen
@@ -256,8 +257,6 @@ namespace WPFApp.ViewModels
                 NotifyOfPropertyChange(() => Day8);
             }
         }
-
-
         public string IconDay1
         {
             get
