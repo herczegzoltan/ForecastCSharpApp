@@ -18,7 +18,8 @@ namespace WPFApp.ViewModels
             DarkSkyAPI.InitializeClient();
             AddLangugesToModel();
             AddCitiesToModel();
-        }   
+
+        }
 
         public void AddLangugesToModel()
         {
@@ -61,6 +62,7 @@ namespace WPFApp.ViewModels
             CurrentWindSpeed = forecastInfo.currently.windSpeed + "m/s";
             CurrentHumidity = forecastInfo.currently.humidity;
             CurrentUvIndex = forecastInfo.currently.uvIndex;
+
 
             string[] DaysAr = new string[8];
             for (int i = 0; i < 8; i++)

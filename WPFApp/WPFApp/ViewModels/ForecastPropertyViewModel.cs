@@ -27,8 +27,9 @@ namespace WPFApp.ViewModels
         private string _Day6;
         private string _Day7;
         private string _Day8;
-        
 
+        private string _IconDay1;
+     
 
         private BindableCollection<LanguageModel> _language = new BindableCollection<LanguageModel>();
         private LanguageModel _selectedLanguage;
@@ -253,6 +254,20 @@ namespace WPFApp.ViewModels
             {
                 _Day8 = value;
                 NotifyOfPropertyChange(() => Day8);
+            }
+        }
+
+
+        public string IconDay1
+        {
+            get
+            {
+                return _IconDay1;
+            }
+            set
+            {
+                _IconDay1 = value;
+                NotifyOfPropertyChange(() => IconDay1);
             }
         }
     }
