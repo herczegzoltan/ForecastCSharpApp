@@ -154,14 +154,14 @@
     </Resource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\cloudy.png">
+    <Resource Include="Resources\cloudy.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
+    </Resource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\fog.png">
+    <Resource Include="Resources\fog.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
+    </Resource>
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\ListOfIcon.txt">
@@ -169,14 +169,14 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\partly-cloudy-day.png">
+    <Resource Include="Resources\partly-cloudy-day.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
+    </Resource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\partly-cloudy-night.png">
+    <Resource Include="Resources\partly-cloudy-night.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
+    </Resource>
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\rain.png">
@@ -184,29 +184,29 @@
     </Resource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\sleet.png">
+    <Resource Include="Resources\sleet.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
+    </Resource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\snow.png">
+    <Resource Include="Resources\snow.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
+    </Resource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\thunderstorm.png">
+    <Resource Include="Resources\thunderstorm.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
+    </Resource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\tornado.png">
+    <Resource Include="Resources\tornado.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
+    </Resource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\wind.png">
+    <Resource Include="Resources\wind.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
+    </Resource>
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\clear-day.png">

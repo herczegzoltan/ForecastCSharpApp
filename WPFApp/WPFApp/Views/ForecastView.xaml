@@ -5,85 +5,106 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPFApp.Views"
         mc:Ignorable="d"
-        Title="ForecastView" Height="725" Width="1200">
-
-        <Grid >
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="30"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
+        Title="ForecastView" Height="900" Width="1200">
+    <Grid >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="30"/>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="30"/>
-            </Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="30"/>
+        </Grid.ColumnDefinitions>
 
-            <Grid.RowDefinitions>
-                <RowDefinition Height="20"/>
-                <RowDefinition Height="auto"/>
-                <RowDefinition Height="20"/>
-                <RowDefinition Height="auto"/>
-                <RowDefinition Height="auto"/>
-                <RowDefinition Height="auto"/>
-                <RowDefinition Height="auto"/>
-                <RowDefinition Height="auto"/>
-                <RowDefinition Height="auto"/>
-                <RowDefinition Height="auto"/>
-                <RowDefinition Height="auto"/>
-                <RowDefinition Height="auto"/>
-                <RowDefinition Height="auto"/>
-                <RowDefinition Height="auto"/>
-                <RowDefinition Height="auto"/>
-                <RowDefinition Height="auto"/>
-                <RowDefinition Height="auto"/>
-                <RowDefinition Height="auto"/>
-                <RowDefinition Height="*"/>
-            </Grid.RowDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
 
-            <ComboBox Grid.Row="1"  Grid.Column="1" Grid.ColumnSpan="2"
-                  x:Name="Languages" 
-                  SelectedItem="{Binding Path=SelectedLanguage, Mode=OneWayToSource}" 
-                  DisplayMemberPath="ValueLang">
-            </ComboBox>
-            <ComboBox Grid.Row="1" Grid.Column="4" Grid.ColumnSpan="1"
-                  x:Name="Cities" 
-                  SelectedItem="{Binding Path=SelectedCity, Mode=OneWayToSource}" 
-                  DisplayMemberPath="KeyCity">
-            </ComboBox>
+        <ComboBox Grid.Row="1"  Grid.Column="1" Grid.ColumnSpan="2"
+            x:Name="Languages" 
+            SelectedItem="{Binding Path=SelectedLanguage, Mode=OneWayToSource}" 
+            DisplayMemberPath="ValueLang">
+        </ComboBox>
+        <ComboBox Grid.Row="1" Grid.Column="4" Grid.ColumnSpan="1"
+            x:Name="Cities" 
+            SelectedItem="{Binding Path=SelectedCity, Mode=OneWayToSource}" 
+            DisplayMemberPath="KeyCity">
+        </ComboBox>
 
-            <Button x:Name="GetForecastInformation"        Grid.Row="1" Grid.Column="8"  >Request</Button>
+        <Button x:Name="GetForecastInformation"        Grid.Row="1" Grid.Column="8"  >Request</Button>
 
-            <TextBlock x:Name="CurrentSummary"             Grid.Row="4"  Grid.Column="1" Grid.ColumnSpan ="8" TextAlignment="Center" FontSize="40" ></TextBlock>
-            <TextBlock x:Name="CurrentTemperature"         Grid.Row="5"  Grid.Column="1" Grid.ColumnSpan ="8" TextAlignment="Center" FontSize="60" FontWeight="Bold" ></TextBlock>
-            <TextBlock x:Name="CurrentApparentTemperature" Grid.Row="6"  Grid.Column="1" Grid.ColumnSpan ="8" TextAlignment="Center" ></TextBlock>
-            <TextBlock x:Name="CurrentPressure"            Grid.Row="7"  Grid.Column="1" Grid.ColumnSpan ="8" TextAlignment="Center" ></TextBlock>
-            <TextBlock x:Name="CurrentWindSpeed"           Grid.Row="8"  Grid.Column="1" Grid.ColumnSpan ="8" TextAlignment="Center" ></TextBlock>
-            <TextBlock x:Name="CurrentHumidity"            Grid.Row="9"  Grid.Column="1" Grid.ColumnSpan ="8" TextAlignment="Center" ></TextBlock>
-            <TextBlock x:Name="CurrentUvIndex"             Grid.Row="10" Grid.Column="1" Grid.ColumnSpan ="8" TextAlignment="Center" ></TextBlock>
+        <TextBlock x:Name="CurrentSummary"             Grid.Row="4"  Grid.Column="1" Grid.ColumnSpan ="8" TextAlignment="Center" FontSize="40" ></TextBlock>
+        <TextBlock x:Name="CurrentTemperature"         Grid.Row="5"  Grid.Column="1" Grid.ColumnSpan ="8" TextAlignment="Center" FontSize="60" FontWeight="Bold" ></TextBlock>
+        <TextBlock x:Name="CurrentApparentTemperature" Grid.Row="6"  Grid.Column="1" Grid.ColumnSpan ="8" TextAlignment="Center" ></TextBlock>
+        <TextBlock x:Name="CurrentPressure"            Grid.Row="7"  Grid.Column="1" Grid.ColumnSpan ="8" TextAlignment="Center" ></TextBlock>
+        <TextBlock x:Name="CurrentWindSpeed"           Grid.Row="8"  Grid.Column="1" Grid.ColumnSpan ="8" TextAlignment="Center" ></TextBlock>
+        <TextBlock x:Name="CurrentHumidity"            Grid.Row="9"  Grid.Column="1" Grid.ColumnSpan ="8" TextAlignment="Center" ></TextBlock>
+        <TextBlock x:Name="CurrentUvIndex"             Grid.Row="10" Grid.Column="1" Grid.ColumnSpan ="8" TextAlignment="Center" ></TextBlock>
+        
+        <Border Grid.Column="1"  Grid.Row="11" Grid.ColumnSpan="8"  Height="1" BorderBrush="Gray" BorderThickness="0,3"/>
 
+        <Image  Grid.Row="3" Grid.RowSpan="3" Grid.Column="1" Grid.ColumnSpan="2" Height="90" Width="90" Source="{Binding CurrentIcon}" />
+        <Image  Grid.Row="3" Grid.RowSpan="3" Grid.Column="7" Grid.ColumnSpan="2" Height="90" Width="90" Source="{Binding CurrentIcon}" />
 
-            <Label Grid.Row="12"   Grid.Column="1" Grid.ColumnSpan ="2" HorizontalAlignment="Center" VerticalAlignment="Center"  FontSize="20" FontWeight="Bold"  >Day 1</Label>
-            <Label Grid.Row="12"   Grid.Column="3" Grid.ColumnSpan ="2" HorizontalAlignment="Center" VerticalAlignment="Center"  FontSize="20" FontWeight="Bold"  >Day 2</Label>
-            <Label Grid.Row="12"   Grid.Column="5" Grid.ColumnSpan ="2" HorizontalAlignment="Center" VerticalAlignment="Center"  FontSize="20" FontWeight="Bold"  >Day 3</Label>
-            <Label Grid.Row="12"   Grid.Column="7" Grid.ColumnSpan ="2" HorizontalAlignment="Center" VerticalAlignment="Center"  FontSize="20" FontWeight="Bold"  >Day 4</Label>
+        <!--ROW 12-->
+        <Label Grid.Row = "12"   Grid.Column = "1" Grid.ColumnSpan = "2" HorizontalAlignment = "Center" VerticalAlignment = "Center"  FontSize = "20" FontWeight = "Bold"  >Day 1</Label>
+        <Label Grid.Row = "12"   Grid.Column = "3" Grid.ColumnSpan = "2" HorizontalAlignment = "Center" VerticalAlignment = "Center"  FontSize = "20" FontWeight = "Bold"  >Day 2</Label>
+        <Label Grid.Row = "12"   Grid.Column = "5" Grid.ColumnSpan = "2" HorizontalAlignment = "Center" VerticalAlignment = "Center"  FontSize = "20" FontWeight = "Bold"  >Day 3</Label>
+        <Label Grid.Row = "12"   Grid.Column = "7" Grid.ColumnSpan = "2" HorizontalAlignment = "Center" VerticalAlignment = "Center"  FontSize = "20" FontWeight = "Bold"  >Day 4</Label>
 
-            <TextBlock x:Name="Day1" Grid.Row="13" Grid.Column="1" Grid.ColumnSpan ="2"  ></TextBlock>
-            <TextBlock x:Name="Day2" Grid.Row="13" Grid.Column="3" Grid.ColumnSpan ="2" ></TextBlock>
-            <TextBlock x:Name="Day3" Grid.Row="13" Grid.Column="5" Grid.ColumnSpan ="2" ></TextBlock>
-            <TextBlock x:Name="Day4" Grid.Row="13" Grid.Column="7" Grid.ColumnSpan ="2" ></TextBlock>
+        <!--ROW 13-->
+        <TextBlock x:Name="Day1" Grid.Row="13" Grid.Column="1" Grid.ColumnSpan ="2" ></TextBlock>
+        <TextBlock x:Name="Day2" Grid.Row="13" Grid.Column="3" Grid.ColumnSpan ="2" ></TextBlock>
+        <TextBlock x:Name="Day3" Grid.Row="13" Grid.Column="5" Grid.ColumnSpan ="2" ></TextBlock>
+        <TextBlock x:Name="Day4" Grid.Row="13" Grid.Column="7" Grid.ColumnSpan ="2" ></TextBlock>
 
-            <Label Grid.Row="15"   Grid.Column="1" Grid.ColumnSpan ="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" FontWeight="Bold"  >Day 5</Label>
-            <Label Grid.Row="15"   Grid.Column="3" Grid.ColumnSpan ="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" FontWeight="Bold"  >Day 6</Label>
-            <Label Grid.Row="15"   Grid.Column="5" Grid.ColumnSpan ="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" FontWeight="Bold"  >Day 7</Label>
-            <Label Grid.Row="15"   Grid.Column="7" Grid.ColumnSpan ="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" FontWeight="Bold"  >Day 8</Label>
+        <!--ROW 14-->
+        <Image  Grid.Row="14" Grid.Column="1" Grid.ColumnSpan="2" Height="50" Source = "{Binding IconDay1}" />
+        <Image  Grid.Row="14" Grid.Column="3" Grid.ColumnSpan="2" Height="50" Source = "{Binding IconDay2}" />
+        <Image  Grid.Row="14" Grid.Column="5" Grid.ColumnSpan="2" Height="50" Source = "{Binding IconDay3}" />
+        <Image  Grid.Row="14" Grid.Column="7" Grid.ColumnSpan="2" Height="50" Source = "{Binding IconDay4}" />
 
-            <TextBlock x:Name="Day5" Grid.Row="16" Grid.Column="1" Grid.ColumnSpan ="2" ></TextBlock>
-            <TextBlock x:Name="Day6" Grid.Row="16" Grid.Column="3" Grid.ColumnSpan ="2" ></TextBlock>
-            <TextBlock x:Name="Day7" Grid.Row="16" Grid.Column="5" Grid.ColumnSpan ="2" ></TextBlock>
-            <TextBlock x:Name="Day8" Grid.Row="16" Grid.Column="7" Grid.ColumnSpan ="2" ></TextBlock>
+        <!--ROW 15-->
+        <Border Grid.Column="1"  Grid.Row="15" Grid.ColumnSpan="8"  Height="1" BorderBrush="Gray" BorderThickness="0,3"/>
 
+        <!--ROW 16-->
+        <Label Grid.Row="16"   Grid.Column="1" Grid.ColumnSpan ="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" FontWeight="Bold"  >Day 5</Label>
+        <Label Grid.Row="16"   Grid.Column="3" Grid.ColumnSpan ="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" FontWeight="Bold"  >Day 6</Label>
+        <Label Grid.Row="16"   Grid.Column="5" Grid.ColumnSpan ="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" FontWeight="Bold"  >Day 7</Label>
+        <Label Grid.Row="16"   Grid.Column="7" Grid.ColumnSpan ="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" FontWeight="Bold"  >Day 8</Label>
+
+        <!--ROW 17-->
+        <TextBlock x:Name="Day5" Grid.Row = "17" Grid.Column = "1" Grid.ColumnSpan = "2" ></TextBlock>
+        <TextBlock x:Name="Day6" Grid.Row = "17" Grid.Column = "3" Grid.ColumnSpan = "2" ></TextBlock>
+        <TextBlock x:Name="Day7" Grid.Row = "17" Grid.Column = "5" Grid.ColumnSpan = "2" ></TextBlock>
+        <TextBlock x:Name="Day8" Grid.Row = "17" Grid.Column = "7" Grid.ColumnSpan = "2" ></TextBlock>
+
+        <!--ROW 18-->
+        <Image  Grid.Row="18" Grid.Column="1" Grid.ColumnSpan="2" Height="50" Source="{Binding IconDay5}" />
+        <Image  Grid.Row="18" Grid.Column="3" Grid.ColumnSpan="2" Height="50" Source="{Binding IconDay6}" />
+        <Image  Grid.Row="18" Grid.Column="5" Grid.ColumnSpan="2" Height="50" Source="{Binding IconDay7}" />
+        <Image  Grid.Row="18" Grid.Column="7" Grid.ColumnSpan="2" Height="50" Source="{Binding IconDay8}" />
     </Grid>
 </Window>

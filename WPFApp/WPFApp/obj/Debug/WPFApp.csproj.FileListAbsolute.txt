@@ -1,15 +1,6 @@
 C:\Projects\GitRepo\ForecastCSharpApp\WPFApp\WPFApp\bin\Debug\Resources\ListOfCities.txt
 C:\Projects\GitRepo\ForecastCSharpApp\WPFApp\WPFApp\bin\Debug\Resources\ListOfLanguages.txt
-C:\Projects\GitRepo\ForecastCSharpApp\WPFApp\WPFApp\bin\Debug\Resources\cloudy.png
-C:\Projects\GitRepo\ForecastCSharpApp\WPFApp\WPFApp\bin\Debug\Resources\fog.png
 C:\Projects\GitRepo\ForecastCSharpApp\WPFApp\WPFApp\bin\Debug\Resources\ListOfIcon.txt
-C:\Projects\GitRepo\ForecastCSharpApp\WPFApp\WPFApp\bin\Debug\Resources\partly-cloudy-day.png
-C:\Projects\GitRepo\ForecastCSharpApp\WPFApp\WPFApp\bin\Debug\Resources\partly-cloudy-night.png
-C:\Projects\GitRepo\ForecastCSharpApp\WPFApp\WPFApp\bin\Debug\Resources\sleet.png
-C:\Projects\GitRepo\ForecastCSharpApp\WPFApp\WPFApp\bin\Debug\Resources\snow.png
-C:\Projects\GitRepo\ForecastCSharpApp\WPFApp\WPFApp\bin\Debug\Resources\thunderstorm.png
-C:\Projects\GitRepo\ForecastCSharpApp\WPFApp\WPFApp\bin\Debug\Resources\tornado.png
-C:\Projects\GitRepo\ForecastCSharpApp\WPFApp\WPFApp\bin\Debug\Resources\wind.png
 C:\Projects\GitRepo\ForecastCSharpApp\WPFApp\WPFApp\bin\Debug\WPFApp.exe.config
 C:\Projects\GitRepo\ForecastCSharpApp\WPFApp\WPFApp\bin\Debug\WPFApp.exe
 C:\Projects\GitRepo\ForecastCSharpApp\WPFApp\WPFApp\bin\Debug\WPFApp.pdb

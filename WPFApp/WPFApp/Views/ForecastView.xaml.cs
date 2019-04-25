@@ -16,6 +16,7 @@ using System.Windows.Shapes;
 using WPFApp.ViewModels;
 using System.IO;
 using System.Reflection;
+
 namespace WPFApp.Views
 {
     /// <summary>
@@ -28,5 +29,6 @@ namespace WPFApp.Views
             InitializeComponent();
         }
 
+      
     }
 }

@@ -17,7 +17,6 @@ namespace WPFApp.ViewModels
         public ForecastViewModel()
         {
             DarkSkyAPI.InitializeClient();
-
             AddLangugesToModel();
             AddCitiesToModel();
         }
@@ -53,13 +52,14 @@ namespace WPFApp.ViewModels
         }
         public async void GetForecastInformation()
         {
-            
+
             if (SelectedLanguage == null || SelectedCity == null)
             {
                 CurrentSummary = "Select Language/City!";
             }
             else
             {
+
                 var forecastInfo = await ForecastProcessor.LoadForecastInformation(SelectedCity.ValueCoord, SelectedLanguage.KeyLang);
 
                 CurrentSummary = forecastInfo.currently.summary;
@@ -69,8 +69,11 @@ namespace WPFApp.ViewModels
                 CurrentWindSpeed = forecastInfo.currently.windSpeed + "m/s";
                 CurrentHumidity = forecastInfo.currently.humidity;
                 CurrentUvIndex = forecastInfo.currently.uvIndex;
+                CurrentIcon = @"\Resources\" + forecastInfo.currently.icon + ".png";
 
                 string[] DaysAr = new string[8];
+                string[] IconsDay = new string[8];
+
                 for (int i = 0; i < 8; i++)
                 {
                     DaysAr[i] =
@@ -82,7 +85,10 @@ namespace WPFApp.ViewModels
                         forecastInfo.daily.data[i].pressure + "hPa" + "\n" +
                         forecastInfo.daily.data[i].windSpeed + "m/s" + "\n" +
                         forecastInfo.daily.data[i].humidity + "\n" +
-                        forecastInfo.daily.data[i].uvIndex + "\n";
+                        forecastInfo.daily.data[i].uvIndex;
+
+                    IconsDay[i] = forecastInfo.daily.data[i].icon;
+
                 }
 
                 Day1 = DaysAr[0];
@@ -93,9 +99,17 @@ namespace WPFApp.ViewModels
                 Day6 = DaysAr[5];
                 Day7 = DaysAr[6];
                 Day8 = DaysAr[7];
+
+                IconDay1 = @"\Resources\" + IconsDay[0] + ".png";
+                IconDay2 = @"\Resources\" + IconsDay[1] + ".png";
+                IconDay3 = @"\Resources\" + IconsDay[2] + ".png";
+                IconDay4 = @"\Resources\" + IconsDay[3] + ".png";
+                IconDay5 = @"\Resources\" + IconsDay[4] + ".png";
+                IconDay6 = @"\Resources\" + IconsDay[5] + ".png";
+                IconDay7 = @"\Resources\" + IconsDay[6] + ".png";
+                IconDay8 = @"\Resources\" + IconsDay[7] + ".png";
+
             }
-
         }
-
     }
 }
